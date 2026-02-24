@@ -276,6 +276,7 @@ The Leave Records page supports one-click professional exports:
 - Project: [Hostel-Leave-Security-ERP](https://github.com/Self-Lakshh/Hostel-Leave-Security-ERP)
 
 **Riya**
+- GitHub: [@Riya-TheLazyDev](https://github.com/Riya-TheLazyDev)
 
 ---
 
