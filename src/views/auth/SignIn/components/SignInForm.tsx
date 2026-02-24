@@ -19,14 +19,14 @@ interface SignInFormProps extends CommonProps {
 }
 
 type SignInFormSchema = {
-    email: string
+    emp_id: string
     password: string
 }
 
 const validationSchema: ZodType<SignInFormSchema> = z.object({
-    email: z
-        .string({ required_error: 'Please enter your email' })
-        .min(1, { message: 'Please enter your email' }),
+    emp_id: z
+        .string({ required_error: 'Please enter your Employee ID' })
+        .min(1, { message: 'Please enter your Employee ID' }),
     password: z
         .string({ required_error: 'Please enter your password' })
         .min(1, { message: 'Please enter your password' }),
@@ -43,8 +43,8 @@ const SignInForm = (props: SignInFormProps) => {
         control,
     } = useForm<SignInFormSchema>({
         defaultValues: {
-            email: 'admin-01@ecme.com',
-            password: '123Qwe',
+            emp_id: '',
+            password: '',
         },
         resolver: zodResolver(validationSchema),
     })
@@ -52,12 +52,12 @@ const SignInForm = (props: SignInFormProps) => {
     const { signIn } = useAuth()
 
     const onSignIn = async (values: SignInFormSchema) => {
-        const { email, password } = values
+        const { emp_id, password } = values
 
         if (!disableSubmit) {
             setSubmitting(true)
 
-            const result = await signIn({ email, password })
+            const result = await signIn({ emp_id, password })
 
             if (result?.status === 'failed') {
                 setMessage?.(result.message)
@@ -71,17 +71,17 @@ const SignInForm = (props: SignInFormProps) => {
         <div className={className}>
             <Form onSubmit={handleSubmit(onSignIn)}>
                 <FormItem
-                    label="Email"
-                    invalid={Boolean(errors.email)}
-                    errorMessage={errors.email?.message}
+                    label="Employee ID"
+                    invalid={Boolean(errors.emp_id)}
+                    errorMessage={errors.emp_id?.message}
                 >
                     <Controller
-                        name="email"
+                        name="emp_id"
                         control={control}
                         render={({ field }) => (
                             <Input
-                                type="email"
-                                placeholder="Email"
+                                type="text"
+                                placeholder="Employee ID"
                                 autoComplete="off"
                                 {...field}
                             />

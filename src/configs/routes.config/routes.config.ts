@@ -7,19 +7,19 @@ export const publicRoutes: Routes = [...authRoute]
 export const protectedRoutes: Routes = [
     {
         key: 'OutRequest',
-        path: '/out-request',
+        path: '/security/out-request',
         component: lazy(() => import('@/views/security/OutRequest')),
         authority: [],
     },
     {
         key: 'InRequest',
-        path: '/in-request',
+        path: '/security/in-request',
         component: lazy(() => import('@/views/security/InRequest')),
         authority: [],
     },
     {
         key: 'LeaveRecords',
-        path: '/leave-records',
+        path: '/security/leave-records',
         component: lazy(() => import('@/views/security/LeaveRecords')),
         authority: [],
     },

@@ -18,7 +18,7 @@ const CollapsibleSide = ({ children }: CommonProps) => {
         >
             <div className="flex flex-auto min-w-0">
                 {larger.lg && <SideNav />}
-                <div className="flex flex-col flex-auto min-h-screen min-w-0 relative w-full">
+                <div className="flex flex-col flex-auto h-screen min-w-0 relative w-full overflow-hidden">
                     <Header
                         className="shadow-sm dark:shadow-2xl"
                         headerStart={

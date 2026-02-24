@@ -9,7 +9,7 @@ import type { NavigationTree } from '@/@types/navigation'
 const navigationConfig: NavigationTree[] = [
     {
         key: 'OutRequest',
-        path: '/out-request',
+        path: '/security/out-request',
         title: 'Out Request',
         translateKey: 'nav.outRequest',
         icon: 'outRequest',
@@ -19,7 +19,7 @@ const navigationConfig: NavigationTree[] = [
     },
     {
         key: 'InRequest',
-        path: '/in-request',
+        path: '/security/in-request',
         title: 'In Request',
         translateKey: 'nav.inRequest',
         icon: 'inRequest',
@@ -29,7 +29,7 @@ const navigationConfig: NavigationTree[] = [
     },
     {
         key: 'LeaveRecords',
-        path: '/leave-records',
+        path: '/security/leave-records',
         title: 'Leave Records',
         translateKey: 'nav.leaveRecords',
         icon: 'leaveRecords',
