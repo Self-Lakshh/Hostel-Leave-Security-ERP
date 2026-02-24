@@ -269,11 +269,13 @@ The Leave Records page supports one-click professional exports:
 
 ---
 
-## 👤 Author
+## �‍💻 Developers
 
-**Lakshya Singhvi**
+**Lakshya Chopra**
 - GitHub: [@Self-Lakshh](https://github.com/Self-Lakshh)
 - Project: [Hostel-Leave-Security-ERP](https://github.com/Self-Lakshh/Hostel-Leave-Security-ERP)
+
+**Riya**
 
 ---
 
