@@ -14,7 +14,7 @@ const navigationConfig: NavigationTree[] = [
         translateKey: 'nav.outRequest',
         icon: 'outRequest',
         type: NAV_ITEM_TYPE_ITEM,
-        authority: [],
+        authority: ['security'],
         subMenu: [],
     },
     {
@@ -24,7 +24,7 @@ const navigationConfig: NavigationTree[] = [
         translateKey: 'nav.inRequest',
         icon: 'inRequest',
         type: NAV_ITEM_TYPE_ITEM,
-        authority: [],
+        authority: ['security'],
         subMenu: [],
     },
     {
@@ -34,7 +34,7 @@ const navigationConfig: NavigationTree[] = [
         translateKey: 'nav.leaveRecords',
         icon: 'leaveRecords',
         type: NAV_ITEM_TYPE_ITEM,
-        authority: [],
+        authority: ['security'],
         subMenu: [],
     }
 ]

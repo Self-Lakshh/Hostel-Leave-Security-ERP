@@ -64,7 +64,10 @@ const SideNav = ({
         >
             <Link
                 to={appConfig.authenticatedEntryPath}
-                className="side-nav-header flex flex-col pt-4"
+                className={classNames(
+                    'side-nav-header flex flex-col pt-4',
+                    sideNavCollapse && 'items-center justify-center'
+                )}
                 style={{ height: HEADER_HEIGHT }}
             >
                 <Logo
@@ -73,11 +76,11 @@ const SideNav = ({
                     type={sideNavCollapse ? 'streamline' : 'full'}
                     className={
                         sideNavCollapse
-                            ? SIDE_NAV_CONTENT_GUTTER
+                            ? 'mx-auto'
                             : LOGO_X_GUTTER
                     }
                 />
-                <div className="border-b border-gray-200 pt-2"></div>
+                <div className="border-b border-gray-200 pt-2 w-full"></div>
             </Link>
             <div className={classNames('side-nav-content', contentClass)}>
                 <ScrollBar style={{ height: '100%' }} direction={direction}>

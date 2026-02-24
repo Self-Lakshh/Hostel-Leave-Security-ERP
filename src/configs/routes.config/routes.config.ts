@@ -9,18 +9,27 @@ export const protectedRoutes: Routes = [
         key: 'OutRequest',
         path: '/security/out-request',
         component: lazy(() => import('@/views/security/OutRequest')),
-        authority: [],
+        authority: ['security'],
+        meta: {
+            pageContainerType: 'gutterless',
+        },
     },
     {
         key: 'InRequest',
         path: '/security/in-request',
         component: lazy(() => import('@/views/security/InRequest')),
-        authority: [],
+        authority: ['security'],
+        meta: {
+            pageContainerType: 'gutterless',
+        },
     },
     {
         key: 'LeaveRecords',
         path: '/security/leave-records',
         component: lazy(() => import('@/views/security/LeaveRecords')),
-        authority: [],
+        authority: ['security'],
+        meta: {
+            pageContainerType: 'gutterless',
+        },
     },
 ]

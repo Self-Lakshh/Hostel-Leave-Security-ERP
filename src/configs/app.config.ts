@@ -13,7 +13,7 @@ const appConfig: AppConfig = {
     unAuthenticatedEntryPath: '/login',
     locale: 'en',
     accessTokenPersistStrategy: 'cookies',
-    enableMock: true,
+    enableMock: false,
 }
 
 export default appConfig

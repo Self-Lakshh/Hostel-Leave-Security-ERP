@@ -47,7 +47,10 @@ const _UserDropdown = () => {
             className="flex"
             toggleClassName="flex items-center"
             renderTitle={
-                <div className="cursor-pointer flex items-center">
+                <div className="cursor-pointer flex items-center gap-2">
+                    <span className="hidden md:inline text-[12px] font-medium text-gray-500">
+                        Welcome, <span className="font-bold text-gray-900">{userName}</span>
+                    </span>
                     <UserAvatar size={32} />
                 </div>
             }
